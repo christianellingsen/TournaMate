@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ToggleButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="No teams"
+        android:textOn="@string/maketeams_buttonnNoTeams"
+        android:textOff="@string/maketeams_buttonnNoTeams"
+        android:id="@+id/toggleButtonNoTeams"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <ToggleButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/maketeams_buttonnRandom"
+        android:textOn="@string/maketeams_buttonnRandom"
+        android:textOff="@string/maketeams_buttonnRandom"
+        android:id="@+id/toggleButtonRandom"
+        android:layout_gravity="center_horizontal" />
+
+    <ToggleButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/maketeams_buttonManual"
+        android:textOn="@string/maketeams_buttonManual"
+        android:textOff="@string/maketeams_buttonManual"
+        android:id="@+id/toggleButtonManually"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_weight="0.93"
+        android:id="@+id/fragmentContentTeams">
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:text="DONE"
+        android:id="@+id/buttonDoneTeams"
+        android:layout_gravity="center_vertical|right"
+        android:background="#ff0cbf00" />
+</LinearLayout>

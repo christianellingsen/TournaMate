@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:showDividers="beginning|middle|end"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tournamentResume_teamHeader"
+        android:id="@+id/textViewTeams"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="35dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:id="@+id/listViewTeams"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tournamentResume_tournamentHeader"
+        android:id="@+id/textViewType"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selected type"
+        android:id="@+id/textViewSelectedType"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="79dp">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButtonONOFFline"
+            android:layout_weight="0.1"
+            android:textOff="@string/tournamentResume_buttonMatchOffline"
+            android:textOn="@string/tournamentResume_buttonMatchOnline"
+            android:textSize="24dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="START"
+            android:id="@+id/buttonStart"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.7"
+            android:textSize="24dp"
+            android:background="#ff0fae02" />
+
+    </LinearLayout>
+
+</LinearLayout>

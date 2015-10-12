@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/resume_tournament_titleNotComplete"
+        android:id="@+id/textViewShowingMatcbes"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20dp"
+        android:background="#ffbf2626" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:id="@+id/listViewResumeTournament"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:text="@string/resume_tournament_buttonShowComplete"
+            android:id="@+id/buttonCompleteMatches" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:text="@string/resume_tournament_buttonDelete"
+            android:id="@+id/buttonResumeDelete" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:text="@string/resume_tournament_buttonResume"
+            android:id="@+id/buttonResumeResumeSelected" />
+    </LinearLayout>
+
+</LinearLayout>

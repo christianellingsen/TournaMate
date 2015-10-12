@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="1">
+
+<ImageView
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:id="@+id/splash"
+    android:src="@drawable/icon"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.17" />
+
+<Button
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:text="@string/mainMenu_newButton"
+    android:id="@+id/buttonStartNew"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.03" />
+
+<Button
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:text="@string/mainMenu_Find"
+    android:id="@+id/buttonFindTournament"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.03" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mainMenu_ResumeMatch"
+        android:id="@+id/buttonResumeTournament"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mainMenu_Favorite"
+        android:id="@+id/buttonStartFavorite"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

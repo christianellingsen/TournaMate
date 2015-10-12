@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.christan.tournamate.DefineNoTeams_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="522dp"
+            android:id="@+id/listViewNoTeams"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.35" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tournament name"
+        android:id="@+id/textViewSpectate_TournamentName"
+        android:layout_gravity="center_horizontal"
+        android:textSize="45dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Matches"
+        android:id="@+id/textSpectate_Matches"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="313dp"
+        android:id="@+id/listViewSpectate_lv"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tournamnet winner"
+        android:id="@+id/textViewSpectate_winner"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No winner yet"
+        android:id="@+id/textViewSpectate_winnerName"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35dp" />
+
+</LinearLayout>

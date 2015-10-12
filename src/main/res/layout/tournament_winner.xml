@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tournamentWinner_theWinneris"
+        android:id="@+id/textView42"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team name"
+        android:id="@+id/textViewWinner_teamName"
+        android:textColor="#0FAE02"
+        android:layout_gravity="center_horizontal"
+        android:textSize="27dp"
+        android:paddingBottom="20dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:id="@+id/listViewWinner"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.35">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activeTournament_buttonRank"
+            android:id="@+id/buttonWinner_rank" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activeTournament_buttonMatchlist"
+            android:id="@+id/buttonWinner_matchList" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tournamentWinner_end"
+            android:id="@+id/buttonWinner_end" />
+    </LinearLayout>
+</LinearLayout>
