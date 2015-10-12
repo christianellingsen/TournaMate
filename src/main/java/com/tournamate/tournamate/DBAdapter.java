@@ -1,7 +1,7 @@
 // ------------------------------------ DBADapter.java ---------------------------------------------
 
 // TODO: Change the package to match your project.
-package com.christan.tournamate;
+package com.tournamate.tournamate;
 
 import android.content.ContentValues;
 import android.content.Context;

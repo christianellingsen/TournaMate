@@ -1,4 +1,4 @@
-package com.christan.tournamate;
+package com.tournamate.tournamate;
 
 import android.app.Fragment;
 import android.os.Bundle;
