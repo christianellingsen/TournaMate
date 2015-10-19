@@ -1,10 +1,18 @@
 package com.tournamate.tournamate;
 
 import android.app.Application;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.util.Base64;
+import android.util.Log;
 
+import com.facebook.FacebookSdk;
 import com.parse.Parse;
 import com.parse.ParseObject;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -82,6 +90,9 @@ public class MyApplication extends Application {
         ParseObject.registerSubclass(Match.class);
         ParseObject.registerSubclass(Team.class);
 
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
+
         // ...
     }
 
@@ -96,9 +107,5 @@ public class MyApplication extends Application {
         });
 
     }
-
-
-
-
 
 }

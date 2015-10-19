@@ -50,7 +50,9 @@ public class MainMenu_akt extends Activity implements View.OnClickListener {
             startActivity(i);
         }
         else if (v==favorite_b){
-            Toast.makeText(this,getString(R.string.mainMenu_commingSoonToast),Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,getString(R.string.mainMenu_commingSoonToast),Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this,logon_akt.class);
+            startActivity(i);
         }
     }
 }

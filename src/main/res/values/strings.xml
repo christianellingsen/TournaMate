@@ -58,4 +58,14 @@
     <string name="findTournament_searchButton">Search</string>
     <string name="addplayer_RemoveAllButton">Remove all</string>
     <string name="notOnline">You are not online. Turnament will be offline</string>
+    <string name="title_activity_test_material_design">testMaterialDesign</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_item1">Item 1</string>
+    <string name="navigation_item2">Item 2</string>
+    <string name="navigation_item3">Item 3</string>
+    <string name="navigation_item4">Item 4</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="title_activity_logon_akt">logon_akt</string>
+    <string name="facebook_app_id">1684225831809319</string>
 </resources>
