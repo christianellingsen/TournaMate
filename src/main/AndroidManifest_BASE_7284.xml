@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tournamate.tournamate">
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:label="TournaMate"
+        android:icon="@drawable/icon"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainMenu_akt"
+            android:screenOrientation="portrait" android:configChanges="orientation">
+        </activity>
+        <activity android:name=".NewTournament_akt"
+            android:screenOrientation="portrait" android:configChanges="orientation">
+        </activity>
+        <activity android:name=".SpectateTournament_akt"
+            android:screenOrientation="portrait" android:configChanges="orientation">
+        </activity>
+        <activity android:name=".FindTournament_akt"
+            android:screenOrientation="portrait" android:configChanges="orientation">
+        </activity>
+        <activity android:name=".ResumeTournament_akt"
+            android:screenOrientation="portrait" android:configChanges="orientation">
+        </activity>
+        <activity android:name=".WelcomeSplash_atk">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 android:orientation="vertical" android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:weightSum="1">
+android:weightSum="1"
+    android:background="#81617e">
 
 <ImageView
     android:layout_width="140dp"
-    android:layout_height="120dp"
+    android:layout_height="70dp"
     android:id="@+id/splash"
-    android:src="@drawable/icon"
+    android:src="@drawable/tm_logo_no_bg"
     android:layout_gravity="center_horizontal"
     android:layout_weight="0.17" />
 
@@ -18,7 +19,9 @@ android:weightSum="1">
     android:text="@string/mainMenu_newButton"
     android:id="@+id/buttonStartNew"
     android:layout_gravity="center_horizontal"
-    android:layout_weight="0.03" />
+    android:layout_weight="0.03"
+    android:background="#eeeeee"
+    android:layout_marginBottom="5dp" />
 
 <Button
     android:layout_width="230dp"
@@ -26,7 +29,9 @@ android:weightSum="1">
     android:text="@string/mainMenu_Find"
     android:id="@+id/buttonFindTournament"
     android:layout_gravity="center_horizontal"
-    android:layout_weight="0.03" />
+    android:layout_weight="0.03"
+    android:background="#eeeeee"
+    android:layout_marginBottom="5dp"/>
 
     <Button
         android:layout_width="230dp"
@@ -34,12 +39,16 @@ android:weightSum="1">
         android:text="@string/mainMenu_ResumeMatch"
         android:id="@+id/buttonResumeTournament"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04" />
+        android:layout_weight="0.04"
+        android:background="#eeeeee"
+        android:layout_marginBottom="5dp"/>
 
     <Button
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:text="@string/mainMenu_Favorite"
         android:id="@+id/buttonStartFavorite"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="#eeeeee"
+        android:layout_marginBottom="5dp"/>
 </LinearLayout>

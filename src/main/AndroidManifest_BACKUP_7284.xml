@@ -9,6 +9,7 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
+<<<<<<< HEAD
         android:icon="@drawable/icon"
         android:label="TournaMate"
         android:theme="@style/AppTheme" >
@@ -24,6 +25,7 @@
 
         <activity android:name=".MainMenu_akt"
             android:screenOrientation="portrait" android:configChanges="orientation">
+>>>>>>> 26d3ee2b645f44431a1d0e75d98333fea7443e4b
         </activity>
         <activity
             android:name=".NewTournament_akt"
