@@ -6,12 +6,14 @@ android:weightSum="1"
     android:background="#81617e">
 
 <ImageView
-    android:layout_width="140dp"
-    android:layout_height="70dp"
+    android:layout_width="250dp"
+    android:layout_height="140dp"
     android:id="@+id/splash"
     android:src="@drawable/tm_logo_no_bg"
     android:layout_gravity="center_horizontal"
-    android:layout_weight="0.17" />
+    android:layout_weight="0.17"
+    android:layout_marginBottom="90dp"
+    android:layout_marginTop="20dp"/>
 
 <Button
     android:layout_width="230dp"
@@ -19,8 +21,9 @@ android:weightSum="1"
     android:text="@string/mainMenu_newButton"
     android:id="@+id/buttonStartNew"
     android:layout_gravity="center_horizontal"
-    android:layout_weight="0.03"
-    android:background="#eeeeee"
+    android:layout_weight="0.02"
+    android:textColor="#ffffff"
+    android:background="@drawable/main_menu_button"
     android:layout_marginBottom="5dp" />
 
 <Button
@@ -29,8 +32,9 @@ android:weightSum="1"
     android:text="@string/mainMenu_Find"
     android:id="@+id/buttonFindTournament"
     android:layout_gravity="center_horizontal"
-    android:layout_weight="0.03"
-    android:background="#eeeeee"
+    android:layout_weight="0.02"
+    android:background="@drawable/main_menu_button"
+    android:textColor="#ffffff"
     android:layout_marginBottom="5dp"/>
 
     <Button
@@ -39,8 +43,9 @@ android:weightSum="1"
         android:text="@string/mainMenu_ResumeMatch"
         android:id="@+id/buttonResumeTournament"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04"
-        android:background="#eeeeee"
+        android:layout_weight="0.02"
+        android:background="@drawable/main_menu_button"
+        android:textColor="#ffffff"
         android:layout_marginBottom="5dp"/>
 
     <Button
@@ -49,6 +54,8 @@ android:weightSum="1"
         android:text="@string/mainMenu_Favorite"
         android:id="@+id/buttonStartFavorite"
         android:layout_gravity="center_horizontal"
-        android:background="#eeeeee"
+        android:layout_weight="0.02"
+        android:background="@drawable/main_menu_button"
+        android:textColor="#ffffff"
         android:layout_marginBottom="5dp"/>
 </LinearLayout>

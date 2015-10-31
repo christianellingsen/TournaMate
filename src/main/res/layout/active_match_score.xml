@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,28 +15,53 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="@android:color/holo_red_light" />
 
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Team X"
         android:id="@+id/textViewTeamX"
         android:layout_gravity="center_horizontal"
-        android:textSize="35dp" />
+        android:textSize="18dp"
+        android:background="#ffffff"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewMatchNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical|center_horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#ffffff"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/textViewTeamX"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="-"
             android:id="@+id/buttonTeamXMinus"
-            android:textSize="30dp" />
+            android:textSize="50dp"
+            android:background="@drawable/delete_point_button"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,14 +71,19 @@
             android:id="@+id/textViewTeamXScore"
             android:textSize="35dp"
             android:paddingLeft="40dp"
-            android:paddingRight="40dp" />
+            android:paddingRight="40dp"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="+"
             android:id="@+id/buttonTeamXPlus"
-            android:textSize="30dp" />
+            android:textSize="50dp"
+            android:background="@drawable/add_point_button"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -64,21 +95,56 @@
         android:id="@+id/textViewVS"
         android:layout_gravity="center_horizontal"
         android:textSize="50dp"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team Y"
+        android:id="@+id/textViewTeamY"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewVS"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical|center_horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#ffffff"
+        android:paddingBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/textViewTeamY"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="-"
             android:id="@+id/buttonTeamYMinus"
-            android:textSize="30dp" />
+            android:textSize="50dp"
+            android:background="@drawable/delete_point_button"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,50 +154,59 @@
             android:id="@+id/textViewTeamYScore"
             android:textSize="35dp"
             android:paddingRight="40dp"
-            android:paddingLeft="40dp" />
+            android:paddingLeft="40dp"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="+"
             android:id="@+id/buttonTeamYPlus"
-            android:textSize="30dp" />
+            android:textSize="50dp"
+            android:background="@drawable/add_point_button"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Team Y"
-        android:id="@+id/textViewTeamY"
-        android:layout_gravity="center_horizontal"
-        android:textSize="35dp" />
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:weightSum="1"
         android:gravity="center_vertical|center_horizontal"
-        android:layout_gravity="center_horizontal">
+        android:background="#81617e"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="@string/activeTournament_buttonRank"
-            android:id="@+id/buttonRank" />
+            android:id="@+id/buttonRank"
+            android:background="#eeeeee"
+            android:layout_marginRight="5dp"/>
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="@string/activeTournament_buttonMatchlist"
-            android:id="@+id/buttonViewAllMatches" />
+            android:id="@+id/buttonViewAllMatches"
+            android:background="#eeeeee"
+            android:layout_marginRight="5dp"/>
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="39dp"
+            android:layout_height="50dp"
             android:text="@string/activeTournament_buttonNext"
             android:id="@+id/buttonNextMatch"
-            android:background="#ff0fae02" />
+            android:background="@drawable/apply_button"
+            android:textColor="#ffffff"
+            />
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -15,7 +15,12 @@
             android:layout_height="522dp"
             android:id="@+id/listViewNoTeams"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1.35" />
+            android:layout_weight="1.35"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:fadeScrollbars="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp" />
 
     </LinearLayout>
 
